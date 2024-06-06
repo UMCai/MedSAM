@@ -86,7 +86,7 @@ parser.add_argument(
 parser.add_argument(
     "--box",
     type=list,
-    default=[95, 255, 190, 350],
+    default=[45, 100, 390, 410],
     help="bounding box of the segmentation target",
 )
 parser.add_argument("--device", type=str, default="cuda:0", help="device")
@@ -94,7 +94,7 @@ parser.add_argument(
     "-chk",
     "--checkpoint",
     type=str,
-    default="work_dir/MedSAM/medsam_vit_b.pth",
+    default="./medsam_vit_b.pth",
     help="path to the trained model",
 )
 args = parser.parse_args()
